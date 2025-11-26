@@ -1,0 +1,33 @@
+{
+  "name": "foodnow-backend",
+  "version": "1.0.0",
+  "description": "Backend API for Food Delivery System (FoodNow)",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "seed:foods": "node src/seed/seedFoods.js",
+    "lint": "echo \"No linter configured\""
+  },
+  "keywords": [
+    "express",
+    "mongodb",
+    "food-delivery",
+    "api"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.6.0",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
+
+

@@ -1,10 +1,12 @@
 {
   "name": "foodnow-frontend",
   "version": "1.0.0",
+  "type": "module",
   "private": true,
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "start": "serve -s dist -l tcp://0.0.0.0:3000",
     "preview": "vite preview",
     "lint": "echo \"No linter configured\""
   },
@@ -16,8 +18,8 @@
   },
   "devDependencies": {
     "@vitejs/plugin-react-swc": "^3.7.0",
+    "cross-env": "^7.0.3",
+    "serve": "^14.2.5",
     "vite": "^5.4.0"
   }
 }
-
-

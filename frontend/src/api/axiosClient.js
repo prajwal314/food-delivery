@@ -1,15 +1,7 @@
 import axios from "axios";
 
-const baseURL = import.meta.env.VITE_API_URL;
-
-if (!baseURL) {
-  // Log a warning in development so misconfigurations are obvious.
-  // This will not break the app but API calls will fail against an undefined URL.
-  // eslint-disable-next-line no-console
-  console.warn(
-    "VITE_API_URL is not defined. Please set it in your frontend .env file."
-  );
-}
+// Hardcoded API URL
+const baseURL = "http://16.16.194.51:5000";
 
 const axiosClient = axios.create({
   baseURL,
